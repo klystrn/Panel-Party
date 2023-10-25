@@ -80,16 +80,16 @@ for row in range(40, screen_width, 65):
 player_group = pygame.sprite.Group()
 
 # Create player1
-player1 = Player('ghost.png', 50, 50)
-player1.rect.x = 25
-player1.rect.y = 25
+player1 = Player('super-mario.png', 50, 50)
+player1.rect.x = screen_width - 25
+player1.rect.y = screen_width - 25
 player_group.add(player1)
 all_group.add(player1)
 
 # Create player2
-player2 = Player('super-mario.png', 50, 50)
-player2.rect.x = screen_width - 25
-player2.rect.y = screen_height - 25
+player2 = Player('ghost.png', 50, 50)
+player2.rect.x = 25
+player2.rect.y = 25
 player_group.add(player2)
 all_group.add(player2)
 
